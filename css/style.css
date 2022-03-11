@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: auto;
+    overflow: auto;
+}
+
+#page-home {
+    background: 
+    right -5% top -5% / 50% no-repeat url('../assets/home/bg-pattern-header.svg'),
+    bottom -650px left -650px / 150% no-repeat url('../assets/home/bg-pattern-footer.svg'),
+    linear-gradient(
+        to bottom,
+        #fafafa 0px,
+        #fafafa 1182px,
+        var(--verydarkblue) 1182px,
+        var(--verydarkblue) 100%
+    );
+    width: 100%;
+    height: 1785px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-signup {
+    background: 
+    top -450px right -550px / 100% no-repeat url('../assets/home/bg-pattern-footer.svg'),
+    linear-gradient(
+        to right,
+        #ffffff 70%,
+        var(--verydarkblue) 30%
+    );
+    width: 100%;
+    height: 800px;
+}
+
+.body-center {
+    width: 1110px;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px red solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 155px;
+    height: 30px;
+}
+
+
+.showcase {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.showcase-text {
+    margin-top: 174px;
+    width: 540px;
+    height: 388px;
+    color: var(--verydarkblue);
+}
+
+.showcase-text h1 {
+    margin-bottom: 24px;
+}
+
+.showcase-images {
+    margin-top: 102px;
+    width: 475px;
+    height: 531px;
+    flex-direction: row;
+    flex-basis: 224px;
+}
+
+.showcase-images img {
+    width: 475px;
+}
+
+
+.bg-bottom {
+    background-color: var(--darkblue);
+    width: 100%;
+    height: 603px;
+}
+
+.plan-selection {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.plan {
+    padding: 40px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+    height: 508px;
+    border-radius: 13px;
+    /* border: 1px black solid; */
+    color: var(--verydarkblue);
+}
+
+.features{
+    height: 116px;
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.plan-basic {
+    background-color: #ffffff;
+}
+
+.plan-ultimate {
+    background-color: #ffffff;
+}
+.plan-pro {
+    background-color: #5175FF;
+    color: #ffffff;
+    background-image: url('../assets/home/bg-pattern-pricing.svg');
+    background-position: center top -375px;
+    background-repeat: no-repeat
+}
+
+.plan-pro .features {
+    color: #ffffff;
+}
+
+.internal-footer {
+    margin-top: 82px;
+    width: 100%;
+    height: 176px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.countdown-panel {
+    width: 448px;
+    height: 100%;
+}
+
+.release-date {
+    letter-spacing: 0.2em;
+    color: #ffffff;
+}
+
+.coming-date {
+    color: var(--primaryblue);
+}
+
+.timer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.timer-card {
+    margin-right: 16px;
+    padding: 20px;
+    width: 100px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    align-items: center;
+    background-color: var(--darkblue);
+    border-radius: 13px;
+    color: #ffffff;
+}
+
+.timer-card .body-2 {
+    color: var(--grey);
+}
+
+.signup-form {
+    width: 445px;
+    height: 508px;
+    background: #ffffff;
+    border-radius: 13px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px var(--darkblue);
+    padding-top: 40px;
+    position: relative;
+}
+
+.input-text {
+    /* border: 1px black solid; */
+    margin-bottom: 24px;
+    height: 45px;
+    min-height: 45px;
+}
+
+.dropdown-button {
+    /* border: 1px black solid; */
+    margin-bottom: 24px;
+    height: 45px;
+    min-height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plans-dropdown {
+    display: none;
+    position: absolute;
+    top: 230px;
+    background-color: #ffffff;
+    width: 367px;
+    height: 198px;
+    border-radius: 8px;
+    padding: 10px 32px;
+    border: 1px var(--grey) solid;
+}
+
+.plans-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.plans-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected-checkmark {
+    width: 12.5px;
+    height: 9.5px;
+}
+
+.plan-option {
+    width: 303px;
+    height: 45px;
+    border: none;
+    border-bottom: 1px #898FA2 solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.plan-option:not(.selected) .selected-checkmark {
+    display: none;
+}
+
+.plan-option:first-of-type {
+    margin-top: 15px;
+}
+
+.plan-option:last-of-type {
+    border: none;
+}
+
+.span-plan-name {
+    color: var(--verydarkblue);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.span-plan-cost {
+    font-size: 16px;
+    color: #747B95;
+    font-weight: 700;
+    opacity: 40%;
+}
+
+.dropdown-arrow {
+    width: 11px;
+    height: 6px;
+}
+
+.signup-form .button-1 {
+    height: 56px;
+    min-height: 56px;
+}
+
+#plan {
+    background-color: #ffffff;
+}
+
+.signup-hero {
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+.signup-prompt {
+    width: 540px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.signup-prompt-text p {
+    color: #747B95;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+#page-signup .countdown-panel h3 {
+    color: var(--verydarkblue);
+}
+
+#page-signup .timer-card {
+    background-color: #EEF1FF;
+}
+
+#page-signup .timer-card h1 {
+    color: var(--primaryblue);
+}
+
+#page-signup .timer-card p {
+    color: var(--darkblue);
+}

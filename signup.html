@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script async src="./scripts/signup.js"></script>
+  <title>Officelite - Sign Up</title>
+</head>
+<body id="page-signup"> 
+  <div class="body-center">
+    <header class="header">
+      <img src="./assets/shared/logo.svg" alt="officelite logo" class="logo">
+    </header>
+    <div class="showcase signup-hero">
+        <div class="signup-prompt">
+            <div class="signup-prompt-text">
+                <h1>Work smarter. Save time.</h1>
+                <p class="body-1">
+                Easily manage your projects. Get on the list and recieve in-app perks available
+                only to early subscribers. We are moving into final development and getting ready
+                for official launch soon.
+                </p>
+            </div>
+            <div class="countdown-panel">
+                <h3 class="release-date">COMING &nbsp;&nbsp;<span class="coming-date">4 NOV 2020</span></h3>
+                <div class="timer">
+                    <div class="timer-card">
+                    <h1>47</h1>
+                    <p class="body-2">days</p>
+                    </div>
+                    <div class="timer-card">
+                    <h1>07</h1>
+                    <p class="body-2">hours</p>
+                    </div>
+                    <div class="timer-card">
+                    <h1>57</h1>
+                    <p class="body-2">minutes</p>
+                    </div>
+                    <div class="timer-card">
+                    <h1>14</h1>
+                    <p class="body-2">seconds</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <form class="signup-form" action="submit">
+            <input type="text" class="input-text" name="name" id="name" placeholder="Name">
+            <input type="text" class="input-text" name="email" id="email" placeholder="Email Address">
+            <button type="button" class="dropdown-button"><span class="span-plan-name">Basic Pack&nbsp;&nbsp;<span class="span-plan-cost">Free</span></span><img class="dropdown-arrow" src="./assets/sign-up/icon-arrow-down.svg" alt="arrow down"></button>
+            <div class="plans-dropdown">
+              <ul class="plans-list">
+                <li class="plan-option selected"><span class="span-plan-name">Basic Pack&nbsp;&nbsp;<span class="span-plan-cost">Free</span></span><img class="selected-checkmark" src="./assets/sign-up/icon-check.svg" alt="check"></li>
+                <li class="plan-option"><span class="span-plan-name">Pro Pack&nbsp;&nbsp;<span class="span-plan-cost">$9.99</span></span><img class="selected-checkmark" src="./assets/sign-up/icon-check.svg" alt="check"></li>
+                <li class="plan-option"><span class="span-plan-name">Ultimate Pack&nbsp;&nbsp;<span class="span-plan-cost">$19.99</span></span><img class="selected-checkmark" src="./assets/sign-up/icon-check.svg" alt="check"></li>
+              </ul>
+            </div>
+            <input type="text" class="input-text" name="phone" id="phone" placeholder="Phone Number">
+            <input type="text" class="input-text" name="company" id="company" placeholder="Company">
+            <button type="submit" class="button button-1 button-long">Get on the list</button>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
